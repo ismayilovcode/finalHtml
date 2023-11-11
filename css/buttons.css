@@ -1,0 +1,36 @@
+a.button {
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #3D30A2;
+    border-radius: 8px;
+    color: #F5F7F8;
+}
+
+a.button:hover {
+    background-color: #554aa2;
+}
+
+a.dangerbutton {
+    background-color: #c70039;
+}
+
+a.dangerbutton:hover {
+    background-color: #dc1f54;
+}
+
+a.warningbutton {
+    background-color: #f99417;
+}
+
+a.warningbutton:hover {
+    background-color: #f6a139;
+}
+
+a.successbutton {
+    background-color: #54b434;
+}
+
+a.successbutton:hover {
+    background-color: #70bf56;
+}
