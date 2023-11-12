@@ -1,0 +1,32 @@
+table,
+td,
+th {
+    border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    text-align: center;
+}
+
+thead,.bgc3 {
+    background-color: #363062;
+}
+
+.bgc1 {
+    background-color: #4b428c;
+}
+
+.bgc2 {
+    background-color: #4d4c7da0;
+}
+
+.tfoot{
+    background-color: rgb(255, 185, 55);
+}
+
