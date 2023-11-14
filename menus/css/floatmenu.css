@@ -1,0 +1,27 @@
+ul.floatmenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #662549;
+    overflow: auto;
+}
+
+ul.floatmenu li {
+    float: left;
+}
+
+ul.floatmenu li a {
+    text-decoration: none;
+    color: #f5f7f8;
+    font-weight: bold;
+    padding: 16px;
+    display: inline-block;
+}
+
+ul.floatmenu li a:hover {
+    background-color: #7a3b5e;
+}
+
+ul.floatmenu li.right {
+    float: right;
+}
