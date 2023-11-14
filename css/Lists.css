@@ -1,27 +1,41 @@
-ul.lists,
-ul.lists a {
-    list-style-type: circle;
-    text-decoration: none;
+/* lists 1 */
+ul#list_wd {
+    background-color: #687EFF;
 }
 
-ul.lists2 a{
-    text-decoration: none;
+ul#list_wd li {
+    padding: 8px;
     color: #F5F7F8;
 }
 
-.bgc4{
-    background-color: #143b71;
+ul#list_wd li ul li {
+    margin-top: 8px;
 }
 
-.bgc5{
-    background-color: #1640D6;
+ul#list_wd li ul li {
+    background-color: #80B3FF;
 }
 
-.bgc4,.bgc5{
-    border-radius: 16px;
+ul#list_wd,
+ul#list_wd li ul li {
+    border-radius: 8px;
 }
 
-ul li a{
+/* list 2 */
+
+ul#list_comp {
+    background-color: #687EFF;
+    padding: 8px 8px 8px 40px;
+    list-style-type: "\1f4bb";
+}
+
+ul#list_comp li {
+    padding: 8px;
+    background-color: #80B3FF;
     color: #F5F7F8;
+    margin-top: 8px;
 }
 
+ul#list_comp,ul#list_comp li{
+    border-radius: 8px;
+}
