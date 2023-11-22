@@ -4,3 +4,7 @@ iframe{
     border: 3px solid #3A4D39;
     border-radius: 16px;
 }
+
+body.page2bgc{
+    background-color: rgba(128, 128, 128, 0.462);
+}
