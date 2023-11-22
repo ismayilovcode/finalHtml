@@ -22,6 +22,7 @@
 
     <h1>With forms you can collect data from users!</h1>
     <br>
+
     <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="off">
         <label for="name">Your name: (User_name) (box size 40)</label>
         <br>
@@ -146,7 +147,33 @@
         <label for="massage">Your massage: (User_massage) (only read)</label>
         <br>
         <textarea name="User_massage" id="massage" cols="45" rows="12">Here is your massage!</textarea>
-        <button type="submit">gonder</button>
+
+
+        <fieldset>
+            <legend>Form Buttons</legend>
+            <input type="submit" value="Submit with input">
+            <input type="reset" value="Reset with input">
+            <br>
+            <br>
+            <button type="submit">Submit with button</button>
+            <button type="reset">Reset with button</button>
+            <br>
+            <br>
+            <button type="submit" action="https://www.w3schools.com/action_page.php">Submit to W3Schools</button>
+            <button type="submit" action="/action_page2.php">Submit to current page</button>
+            <br>
+            <br>
+            <button type="submit" formnovalidate="validate">Submit with validate</button>
+            <button type="submit">Submit without validate</button>
+            <br>
+            <br>
+            <button type="submit" formmethod="get">Submit with GET method</button>
+            <button type="submit" formmethod="post">Submit with POST method></button>
+            <br>
+        </fieldset>
+
+        <h2>Buttons out of form</h2>
+
     </form>
 
 </body>
