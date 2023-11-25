@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+    background-color: gray;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+nav {
+    background-color: lightgrey;
+    flex: 3;
+}
+
+article {
+    background-color: lightcyan;
+    text-align: justify;
+    flex: 7;
+}
+
+header,
+footer,
+nav,
+article {
+    padding: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: beige;
+}
+
+@media (max-width:700px) {
+
+    section{
+        flex-direction: column;
+    }
+}
+
+section{
+    display: flex;
+}
