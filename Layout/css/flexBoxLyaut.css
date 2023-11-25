@@ -41,17 +41,19 @@ ul li a {
     display: block;
 }
 
-ul li a:hover {
-    background-color: beige;
-}
+
 
 @media (max-width:700px) {
 
-    section{
+    section {
         flex-direction: column;
     }
 }
 
-section{
+ul li a:hover {
+    background-color: beige;
+}
+
+section {
     display: flex;
 }

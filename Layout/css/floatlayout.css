@@ -6,14 +6,15 @@ body {
     box-sizing: border-box;
 }
 
-header,footer {
+header,
+footer {
     background-color: gray;
     color: white;
 }
 
-    footer{
-        text-align: center;
-    }
+footer {
+    text-align: center;
+}
 
 nav {
     background-color: lightgrey;
