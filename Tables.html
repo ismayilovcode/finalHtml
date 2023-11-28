@@ -22,94 +22,99 @@
         <li><a href="Layout/index.html">Layouts</a></li>
         <li><a href="menus.html">Menus</a></li>
     </ul>
-    
+
     <br>
     <h1>Introduce your data with well designed Tables!</h1>
     <h2>Vertical table!</h2>
-    <table>
+
+    <table class="table1">
+
+        <caption colspan="14">Yearly salary table</caption>
+
         <thead>
-            <td colspan="14" class="thead1">Yearly salary table</td>
+
+
+            <tr>
+                <td colspan="2">Table name</td>
+                <td colspan="13">2023</td>
+            </tr>
+            <tr>
+                <td colspan="2">seasons:</td>
+                <td colspan="2">Winter</td>
+                <td colspan="3">Spring</td>
+                <td colspan="3">Summer</td>
+                <td colspan="3">Autumn</td>
+                <td>Winter</td>
+            </tr>
+            <tr>
+                <td>№</td>
+                <td>name</td>
+                <td>Jan</td>
+                <td>Feb</td>
+                <td>Mar</td>
+                <td>Apr</td>
+                <td>May</td>
+                <td>Jun</td>
+                <td>Jul</td>
+                <td>Aug</td>
+                <td>Sep</td>
+                <td>Oct</td>
+                <td>Nov</td>
+                <td>Dec</td>
+            </tr>
         </thead>
 
-        <tr class="bgc1">
-            <td colspan="2">Table name</td>
-            <td colspan="13">2023</td>
-        </tr>
-        <tr class="bgc1">
-            <td colspan="2">seasons:</td>
-            <td colspan="2">Winter</td>
-            <td colspan="3">Spring</td>
-            <td colspan="3">Summer</td>
-            <td colspan="3">Autumn</td>
-            <td>Winter</td>
-        </tr>
-        <tr class="bgc1">
-            <td>№</td>
-            <td>name</td>
-            <td>Jan</td>
-            <td>Feb</td>
-            <td>Mar</td>
-            <td>Apr</td>
-            <td>May</td>
-            <td>Jun</td>
-            <td>Jul</td>
-            <td>Aug</td>
-            <td>Sep</td>
-            <td>Oct</td>
-            <td>Nov</td>
-            <td>Dec</td>
-        </tr>
-
-        <tr class="bgc2">
-            <td>1</td>
-            <td>Person</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-        </tr>
-        <tr class="bgc2">
-            <td>2</td>
-            <td>Person</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-        <tr class="bgc2">
-            <td>3</td>
-            <td>Person</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-            <td>100</td>
-        </tr>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Person</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Person</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            <tr>
+                <td>3</td>
+                <td>Person</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
         </tbody>
 
-        <tfoot class="tfoot">
+        <tfoot>
             <tr>
                 <td colspan="2">Monthly summary:</td>
                 <td>300</td>
@@ -144,112 +149,120 @@
 
     <table>
         <tr>
-            <td colspan="12" class="bgc3">Yearly salary table</td>
+            <td colspan="12">Yearly salary table</td>
+        </tr>
+        
+        <colgroup>
+            <col span="3" class="horHead">
+            <col span="3" class="horBody">
+            <col span="3" class="horFoot">
+        </colgroup>
+
+
+        <tr>
+            <td colspan="3">Table name</td>
+            <td>person</td>
+            <td>person</td>
+            <td>person</td>
+            <td>Monthly</td>
+            <td>Seasonal</td>
+            <td>Yearly</td>
         </tr>
         <tr>
-            <td colspan="3" class="bgc1">Table name</td>
-            <td class="bgc2">person</td>
-            <td class="bgc2">person</td>
-            <td class="bgc2">person</td>
-            <td class="tfoot">Monthly</td>
-            <td class="tfoot">Seasonal</td>
-            <td class="tfoot">Yearly</td>
+            <td rowspan="12">2023</td>
+            <td rowspan="2">Winter</td>
+            <td>Jan</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td rowspan="2">600</td>
+            <td rowspan="12">3600</td>
         </tr>
         <tr>
-            <td rowspan="12" class="bgc1">2023</td>
-            <td rowspan="2" class="bgc1">Winter</td>
-            <td class="bgc1">Jan</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-            <td rowspan="2" class="tfoot">600</td>
-            <td rowspan="12" class="tfoot">3600</td>
+            <td>Feb</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Feb</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td rowspan="3">Spring</td>
+            <td>Mar</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td rowspan="3">900</td>
         </tr>
         <tr>
-            <td rowspan="3" class="bgc1">Spring</td>
-            <td class="bgc1">Mar</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-            <td rowspan="3" class="tfoot">900</td>
+            <td>Apr</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Apr</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td>May</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">May</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td rowspan="3">Summer</td>
+            <td>Jun</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td rowspan="3">900</td>
         </tr>
         <tr>
-            <td rowspan="3" class="bgc1">Summer</td>
-            <td class="bgc1">Jun</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-            <td rowspan="3" class="tfoot">900</td>
+            <td>Jul</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Jul</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td>Aug</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Aug</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td rowspan="3">Autumn</td>
+            <td>Sep</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td rowspan="3">900</td>
         </tr>
         <tr>
-            <td rowspan="3" class="bgc1">Autumn</td>
-            <td class="bgc1">Sep</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-            <td rowspan="3" class="tfoot">900</td>
+            <td>Oct</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Oct</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
+            <td>Nov</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
         </tr>
         <tr>
-            <td class="bgc1">Nov</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-        </tr>
-        <tr>
-            <td class="bgc1">Winter</td>
-            <td class="bgc1">Dec</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="bgc2">100</td>
-            <td class="tfoot">300</td>
-            <td class="tfoot">300</td>
+            <td>Winter</td>
+            <td>Dec</td>
+            <td>100</td>
+            <td>100</td>
+            <td>100</td>
+            <td>300</td>
+            <td>300</td>
         </tr>
 
     </table>
