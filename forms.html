@@ -24,8 +24,8 @@
     <h1>With forms you can collect data from users!</h1>
     <br>
 
-    <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="off">
-        <label for="name">Your name: (User_name) (box size 40)</label>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" autocomplete="off" id="testForm">
+        <label for="name">Your name: (user_name) (box size 40)</label>
         <br>
         <input type="name" name="User_name" id="name" size="40px">
         <br>
@@ -35,33 +35,33 @@
         <input type="name" name="" id="surname" disabled>
         <br>
         <br>
-        <label for="email">Your email: (User_email) (autofocused)</label>
+        <label for="email">Your email: (user_email) (autofocused)</label>
         <br>
-        <input type="email" name="User_email" id="email" required autofocus>
+        <input type="email" name="user_email" id="email" required autofocus>
         <br>
         <br>
         <label for="password">Your password: (User_password) (minimum lenght 4 maxsimum lenght 10)</label>
         <br>
-        <input type="password" name="User_password" id="password" min="4" max="10">
+        <input type="password" name="user_password" id="password" min="4" max="10">
         <br>
         <br>
-        <label for="tel">Your telephone: (User_tel)</label>
+        <label for="tel">Your telephone: (user_tel)</label>
         <br>
-        <input type="tel" name="User_tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="070-756-35-06">
+        <input type="tel" name="user_tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" value="070-756-35-06">
         <br>
         <br>
         <label for="link">Your link: (User_link)</label>
         <br>
-        <input type="url" name="User_link" id="link">
+        <input type="url" name="user_link" id="link">
         <br>
         <br>
-        <label for="number">Your age: (User_age) (minimum 18 maxsimum 67)</label>
+        <label for="number">Your age: (user_age) (minimum 18 maxsimum 67)</label>
         <br>
-        <input type="number" name="User_age" id="number" min="18" max="67">
+        <input type="number" name="user_age" id="number" min="18" max="67">
         <br>
         <br>
-        <label for="">Your profession: (User_profession
-            [front-end,back-end,full-stack,network-admin,network-security])</label>
+        <label for="">Your profession:
+            (User_profession[front-end,back-end,full-stack,network-admin,network-security])</label>
         <br>
         <select name="User_profession" id="">
             <option value="">front-end</option>
@@ -91,12 +91,12 @@
         <input type="color" name="fav_color" id="color">
         <br>
         <br>
-        <label for="range">Your rate: (User_rate) (values 0, 10, 20 ...)</label>
+        <label for="range">Your rate: (user_rate) (values 0, 10, 20 ...)</label>
         <br>
-        <input type="range" name="User_rate" id="range" step="10">
+        <input type="range" name="user_rate" id="range" step="10">
         <br>
         <br>
-        <label for="date">Date of birth: (User_birthday) (mandatory)</label>
+        <label for="date">Date of birth: (user_birthday) (mandatory)</label>
         <br>
         <input type="date" name="User_birthday" id="date" required>
         <br>
@@ -109,12 +109,12 @@
         <input type="datetime" name="working_hour_to" id="timeTO">
         <br>
         <br>
-        <label for="">Work experience: (User_experience_from, User_experience_to)</label>
+        <label for="">Work experience: (user_experience_from, user_experience_to)</label>
         <br>
         <label for="From">From:</label>
-        <input type="time" name="User_experience_from" id="From">
+        <input type="time" name="user_experience_from" id="From">
         <label for="TO">To:</label>
-        <input type="time" name="User_experience_to" id="TO">
+        <input type="time" name="user_experience_to" id="TO">
         <br>
         <br>
         <label for="week">Your favorite week: (fav_week)</label>
@@ -122,12 +122,12 @@
         <input type="text" name="fav_week" id="week">
         <br>
         <br>
-        <label for="cv">Your CV: (User_cv)</label>
+        <label for="cv">Your CV: (user_cv)</label>
         <br>
-        <input type="file" name="User_cv" id="cv">
+        <input type="file" name="user_cv" id="cv">
         <br>
         <br>
-        <label for="Male">Gender: (User_gender:[male, fermale]) (default checked)</label>
+        <label for="Male">Gender: (user_gender:[male, fermale]) (default checked)</label>
         <br>
         <input type="radio" name="user_gender" id="Male" value="Male">
         <label for="Male">Male</label>
@@ -135,7 +135,7 @@
         <label for="Fermale">Fermale</label>
         <br>
         <br>
-        <label for="">Languages: (User_language: [az, en, tr])</label>
+        <label for="">Languages: (user_language: [az, en, tr])</label>
         <br>
         <input type="checkbox" name="user_language" id="az" value="az">
         <label for="az">Azerbaijan</label>
@@ -145,7 +145,7 @@
         <label for="turk">Turkish</label>
         <br>
         <br>
-        <label for="massage">Your massage: (User_massage) (only read)</label>
+        <label for="massage">Your massage: (user_massage) (only read)</label>
         <br>
         <textarea name="User_massage" id="massage" cols="45" rows="12">Here is your massage!</textarea>
 
@@ -169,15 +169,17 @@
             <br>
             <br>
             <button type="submit" formmethod="get">Submit with GET method</button>
-            <button type="submit" formmethod="post">Submit with POST method></button>
+            <button type="submit" formmethod="post">Submit with POST method</button>
             <br>
         </fieldset>
 
-        <h2>Buttons out of form</h2>
 
-        <button type="submit">Submit in current  tab</button>
-        <button type="submit" target="_blank">>Submit in New table</button>
     </form>
+
+    <h2>Buttons out of form</h2>
+
+    <input type="submit" form="testForm" formtarget="_self" value="Submit in current tab">
+    <input type="submit" form="testForm" target="_blank" value="Submit in New table">
 
 </body>
 
