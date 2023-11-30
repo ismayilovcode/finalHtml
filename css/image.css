@@ -1,5 +1,14 @@
 img{
     border-radius: 35px;
     width: 50%;
+    margin: 0 16px;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    clear: both;
 }
 
