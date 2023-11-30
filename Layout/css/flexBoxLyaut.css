@@ -5,7 +5,11 @@ body {
 header,
 footer {
     background-color: gray;
-    color: white;
+}
+
+header h1,
+footer p{
+    color: #f5f7f8;
 }
 
 footer {
