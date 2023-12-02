@@ -15,9 +15,10 @@ table {
 }
 
 
-caption {
+caption , .caption{
     background-color: #363062;
     color: #f5f7f8;
+    padding: 8px;
 }
 
 .table1 thead,
